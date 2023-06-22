@@ -45,7 +45,7 @@ public class App {
         scanner.nextLine();
         if (idade < 18) {
              System.out.println("divindade: Essas masmorras são muito perigosas para quem ainda não provou álcool!");
-             System.out.println("\nFIM de jogo");
+             System.out.println("\nFIM de jogo!");
          }
         else {
              System.out.println("divindade: Que bom que você não é criança, mas tenha cuidado com essas masmorras porque o perigo espreita cada esquina desse inferno!");
@@ -61,7 +61,7 @@ public class App {
         String escolha = scanner.nextLine();
         if (escolha.equalsIgnoreCase("aceitar")) {
              System.out.println("Por aceitar essa proposta você foi morto e a maldição vai perpetuar por toda a eternidade. ");
-             System.out.println("\nFIM de jogo");
+             System.out.println("\nFIM de jogo!");
          }
          if (escolha.equalsIgnoreCase("recusar")) {
              System.out.println("\nOutra divindade: então você vai sofrer a furia dos deuses!\n");
@@ -69,7 +69,7 @@ public class App {
 
         System.out.println("\nApós entrarem em um conflito épico " +nome+" saiu vitorioso e roubou o poder do deus, "+ 
         "com o poder divino"+nome+ " o usou para acabar com a maldição e restaurar o reino. \n");
-        System.out.println("FIM de jogo");
+        System.out.println("FIM de jogo!");
 
              }
         }
