@@ -63,25 +63,40 @@ public class App {
          if (pj.escolha.equalsIgnoreCase("recusar")) {
              System.out.println("\nOutra divindade: então você vai sofrer a furia dos deuses!\n");
              System.out.println("por lutar com a divindade vc perdeu 80 de sua energia mas matou o deus");
-             pj.energia -= 80;
-             pj2.energia -= 80;
+             pj.gastarenergia(80); 
+             pj2.gastarenergia(80);
               System.out.println("sua energia é: "+pj.energia+" para "+pj.nome+ " e "+pj2.nome+" ficou com "+pj2.energia);
          }
 
-        System.out.println("\nApós entrarem em um conflito épico " +pj.nome+" saiu vitorioso e pode escolher roubou o poder do deus ou não. [você quer roubar? sim ou nao] ");
+        System.out.println("\nApós entrarem em um conflito épico " +pj.nome+" saiu vitorioso e "+
+        "pode escolher roubou o poder do deus ou não. [você quer roubar? sim ou nao] ");
         pj.escolha = scanner.nextLine();
             if (pj.escolha.equalsIgnoreCase("sim")) {
                 System.out.print("\n|====================================>           capítulo 3          <==================================================|\n");
                 pj.energia += 100;
                 System.out.println(pj.nome+" pegou o poder e ganhou mais 100 de energia\n");
                 System.out.println("\napós a morte da divindade os personagens começaram a sentir as estruturas do reino tremerem.\n");
-                
-
-            }
+                System.out.println("os aventureiros percebem então que os outros deuses estão chegando."+
+                "[você pode digitar [fugir] para tentar fugir dos deuses ou digitar [lutar] para tentar matar mais um]");
+                pj.escolha = scanner.nextLine();
+                if (pj.escolha.equalsIgnoreCase("fugir")) {
+                    System.out.println(pj.nome+ " e " + pj2.nome +" conseguiram escapar do reino e se salvarem ");
+                    System.out.println("FIM de jogo!");
+                }
+                else {
+                    System.out.println("você não conseguiu derrotar os deuses e vc e seu amigo perderam 200 de energia ");  
+                    pj.gastarenergia(200); 
+                    pj2.gastarenergia(200);
+                  
+            }}
             else {  
                  System.out.print("\n|====================================>           capítulo 2          <==================================================|\n");
-
-            }     
+                 System.out.println("como "+pj.nome+ " não pegou o poder a ganância de "+pj2.nome+" o fez roubar o poder para ele e matar "+pj.nome+" tirando 200 de energia dele.");
+                 pj.gastarenergia(200);
+            
+       
+            }
         }
     }       
 }
+

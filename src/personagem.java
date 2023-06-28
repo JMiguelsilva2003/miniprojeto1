@@ -4,4 +4,14 @@ public class personagem {
     int vida = 100;
     String escolha;
     int energia = 100;
+
+    void gastarenergia(int valor){
+        this.energia -= valor;
+        if (energia <= 0) {
+            energia = 0;
+            System.out.println("seu personagem morreu");
+            System.out.println("FIM de jogo!");
+            System.exit(0);
+        }
+    }
 }
