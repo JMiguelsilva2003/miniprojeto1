@@ -2,8 +2,14 @@
 import java.util.Scanner;
 
 public class App {
+
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
+        personagem pj = new personagem();
+        personagem pj2 = new personagem();
+        pj2.nome = "Turame";
+        
+        System.out.print("\n|====================================>           PRÓLOGO           <==================================================|\n");
 
         System.out.println(
          "\nEra uma vez, em uma terra sombria e repleta de mistérios, um reino assolado por medo e fome."+
@@ -22,15 +28,6 @@ public class App {
         
         System.out.println("Desconhecido: Você parece perdido, não vou atacalo, Saia das sombras!\n");
 
-        System.out.println("[Digite o seu sexo com M para masculino e F para feminino: ]");
-        String sexo = scanner.nextLine();
-        
-         if (sexo.equalsIgnoreCase("M")) {
-             System.out.println("Desconhecido: Olâ rapaz, essas masmorras são perigosas! Cuidado! mas eu irei te ajudar.");
-         }
-         if (sexo.equalsIgnoreCase("F")) {
-             System.out.println("Desconhecido: Olâ moça, essas masmorras são muito perigosas para uma mulher! mas eu irei te ajudar.");
-         }
         System.out.println("\nDesconhecido: Eu sou um antigo deus que foi destituído pelos meus irmãos e estou esperando "+
         "um aventureiro corajoso para acabar com a maldição do reino, você parece a pessoa certa!\n");
         
@@ -38,40 +35,53 @@ public class App {
         System.out.println("O desconhecido agarra sua cabeça e com seu poder revela o seu passado divino.\n ");
 
         System.out.println("divindade: Qual o seu nome?");
-        String nome = scanner.nextLine();
+        pj.nome = scanner.nextLine();
         
-        System.out.println("divindade : Olá "+nome+", qual é a sua idade?");
-        int idade = scanner.nextInt();
+        System.out.println("divindade : Olá "+pj.nome+", qual é a sua idade?");
+        pj.idade = scanner.nextInt();
         scanner.nextLine();
-        if (idade < 18) {
+        if (pj.idade < 18) {
              System.out.println("divindade: Essas masmorras são muito perigosas para quem ainda não provou álcool!");
              System.out.println("\nFIM de jogo!");
          }
         else {
              System.out.println("divindade: Que bom que você não é criança, mas tenha cuidado com essas masmorras porque o perigo espreita cada esquina desse inferno!");
-             if ( sexo.equalsIgnoreCase("m") ) {
-                System.out.println("divindade: Lhe desejo sorte jovem rapaz, você vai precisar de toda ela, que os deuses te acompanhe "+nome);
-              } 
-             else {
-                System.out.println("divindade: Lhe desejo sorte jovem dama, você vai precisar de toda ela, que os deuses te acompanhe "+nome);
+             System.out.println("divindade: Lhe desejo sorte jovem rapaz, você vai precisar de toda ela, que os deuses te acompanhe "+pj.nome);
                
-        System.out.println(nome+" adentra a fundo no reino e encontra um dos deuses, que o faz uma proposta.");
+        System.out.println(pj.nome+" adentra a fundo no reino e encontra um guerreiro perdido e assustado");
+        System.out.println(pj.nome+": quem é você?");
+        System.out.println(pj2.nome+": eu sou "+pj2.nome+ " e eu posso ajudar você.");
+        System.out.println(pj.nome+": então vamos!");
+        System.out.println(pj.nome+" ao adentra mais a fundo no reino e encontra um dos deuses, que o faz uma proposta.");
         System.out.println("\nOutra divindade: você poderia se juntar a mim, eu realizarei todos os seus desejos.\n");
         System.out.println("[Digite aceitar ou recusar. ]");
-        String escolha = scanner.nextLine();
-        if (escolha.equalsIgnoreCase("aceitar")) {
+        pj.escolha = scanner.nextLine();
+        if (pj.escolha.equalsIgnoreCase("aceitar")) {
              System.out.println("Por aceitar essa proposta você foi morto e a maldição vai perpetuar por toda a eternidade. ");
              System.out.println("\nFIM de jogo!");
          }
-         if (escolha.equalsIgnoreCase("recusar")) {
+         if (pj.escolha.equalsIgnoreCase("recusar")) {
              System.out.println("\nOutra divindade: então você vai sofrer a furia dos deuses!\n");
+             System.out.println("por lutar com a divindade vc perdeu 80 de sua energia mas matou o deus");
+             pj.energia -= 80;
+             pj2.energia -= 80;
+              System.out.println("sua energia é: "+pj.energia+" para "+pj.nome+ " e "+pj2.nome+" ficou com "+pj2.energia);
          }
 
-        System.out.println("\nApós entrarem em um conflito épico " +nome+" saiu vitorioso e roubou o poder do deus, "+ 
-        "com o poder divino"+nome+ " o usou para acabar com a maldição e restaurar o reino. \n");
-        System.out.println("FIM de jogo!");
+        System.out.println("\nApós entrarem em um conflito épico " +pj.nome+" saiu vitorioso e pode escolher roubou o poder do deus ou não. [você quer roubar? sim ou nao] ");
+        pj.escolha = scanner.nextLine();
+            if (pj.escolha.equalsIgnoreCase("sim")) {
+                System.out.print("\n|====================================>           capítulo 3          <==================================================|\n");
+                pj.energia += 100;
+                System.out.println(pj.nome+" pegou o poder e ganhou mais 100 de energia\n");
+                System.out.println("\napós a morte da divindade os personagens começaram a sentir as estruturas do reino tremerem.\n");
+                
 
-             }
+            }
+            else {  
+                 System.out.print("\n|====================================>           capítulo 2          <==================================================|\n");
+
+            }     
         }
     }       
 }
