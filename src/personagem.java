@@ -10,8 +10,6 @@ public class personagem {
         if (energia <= 0) {
             energia = 0;
             System.out.println("seu personagem morreu");
-            System.out.println("FIM de jogo!");
-            System.exit(0);
         }
     }
 }

@@ -48,19 +48,24 @@ public class App {
              System.out.println("divindade: Que bom que você não é criança, mas tenha cuidado com essas masmorras porque o perigo espreita cada esquina desse inferno!");
              System.out.println("divindade: Lhe desejo sorte jovem rapaz, você vai precisar de toda ela, que os deuses te acompanhe "+pj.nome);
                
-        System.out.println(pj.nome+" adentra a fundo no reino e encontra um guerreiro perdido e assustado");
-        System.out.println(pj.nome+": quem é você?");
-        System.out.println(pj2.nome+": eu sou "+pj2.nome+ " e eu posso ajudar você.");
-        System.out.println(pj.nome+": então vamos!");
-        System.out.println(pj.nome+" ao adentra mais a fundo no reino e encontra um dos deuses, que o faz uma proposta.");
-        System.out.println("\nOutra divindade: você poderia se juntar a mim, eu realizarei todos os seus desejos.\n");
-        System.out.println("[Digite aceitar ou recusar. ]");
-        pj.escolha = scanner.nextLine();
-        if (pj.escolha.equalsIgnoreCase("aceitar")) {
+                capitulo cap01 = new capitulo();
+                cap01.narrativa = "\n|====================================>           capítulo 1          <==================================================|\n"+
+                pj.nome+" adentra a fundo no reino e encontra um guerreiro perdido e assustado"+
+                pj.nome+": quem é você?"+
+                pj2.nome+": eu sou "+pj2.nome+ " e eu posso ajudar você."+
+                pj.nome+": então vamos!"+
+                pj.nome+" ao adentra mais a fundo no reino e encontra um dos deuses, que o faz uma proposta."+
+                "\nOutra divindade: você poderia se juntar a mim, eu realizarei todos os seus desejos.\n";
+                cap01.pergunta1 = "aceitar";
+                cap01.pergunta2 = "recusar";
+                cap01.mostra(pj);
+
+        if (cap01.escolha(scanner) == 1) {
              System.out.println("Por aceitar essa proposta você foi morto e a maldição vai perpetuar por toda a eternidade. ");
              System.out.println("\nFIM de jogo!");
          }
-         if (pj.escolha.equalsIgnoreCase("recusar")) {
+
+        else {
              System.out.println("\nOutra divindade: então você vai sofrer a furia dos deuses!\n");
              System.out.println("por lutar com a divindade vc perdeu 80 de sua energia mas matou o deus");
              pj.gastarenergia(80); 
@@ -72,14 +77,16 @@ public class App {
         "pode escolher roubou o poder do deus ou não. [você quer roubar? sim ou nao] ");
         pj.escolha = scanner.nextLine();
             if (pj.escolha.equalsIgnoreCase("sim")) {
-                System.out.print("\n|====================================>           capítulo 3          <==================================================|\n");
-                pj.energia += 100;
-                System.out.println(pj.nome+" pegou o poder e ganhou mais 100 de energia\n");
-                System.out.println("\napós a morte da divindade os personagens começaram a sentir as estruturas do reino tremerem.\n");
-                System.out.println("os aventureiros percebem então que os outros deuses estão chegando."+
-                "[você pode digitar [fugir] para tentar fugir dos deuses ou digitar [lutar] para tentar matar mais um]");
-                pj.escolha = scanner.nextLine();
-                if (pj.escolha.equalsIgnoreCase("fugir")) {
+                capitulo cap03 = new capitulo();
+                cap03.narrativa = "\n|====================================>           capítulo 3          <==================================================|\n"+
+                pj.nome+" pegou o poder e ganhou poder.\n"+
+                "\napós a morte da divindade os personagens começaram a sentir as estruturas do reino tremerem.\n"+
+                "os aventureiros percebem então que os outros deuses estão chegando."+
+                "[você pode digitar [fugir] para tentar fugir dos deuses ou digitar [lutar] para tentar matar mais um]";
+                cap03.pergunta1 = "Fugir";
+                cap03.pergunta2 = "lutar";
+                cap03.mostra(pj);
+                if (cap03.escolha(scanner) == 1) {
                     System.out.println(pj.nome+ " e " + pj2.nome +" conseguiram escapar do reino e se salvarem ");
                     System.out.println("FIM de jogo!");
                 }
@@ -90,10 +97,24 @@ public class App {
                   
             }}
             else {  
-                 System.out.print("\n|====================================>           capítulo 2          <==================================================|\n");
-                 System.out.println("como "+pj.nome+ " não pegou o poder a ganância de "+pj2.nome+" o fez roubar o poder para ele e matar "+pj.nome+" tirando 200 de energia dele.");
-                 pj.gastarenergia(200);
+                 
+                capitulo cap02 = new capitulo();
+                 cap02.narrativa = "\n|====================================>           capítulo 2          <==================================================|\n"+
+                                    "como "+pj.nome+ " não pegou o poder a ganância de "+pj2.nome+" o fez roubar o poder para ele e matar "+pj.nome+" tirando 200 de energia dele."+
+                                    "[você quer [voltar] para o primeiro capítulo ou [aceitar] o seu fim]";
+
+                 cap02.pergunta1 = "voltar";
+                 cap02.pergunta2 = "aceitar";
+                 cap02.mudancaDeEnergia = 200;
+                 cap02.mostra(pj);                   
             
+                 if (cap02.escolha(scanner) == 1) {
+                    main(args);
+                }
+                else {
+                    System.out.println("Fim de jogo");
+
+                }
        
             }
         }
