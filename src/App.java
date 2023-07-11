@@ -56,8 +56,7 @@ public class App {
                 pj.nome+": então vamos!"+
                 pj.nome+" ao adentra mais a fundo no reino e encontra um dos deuses, que o faz uma proposta."+
                 "\nOutra divindade: você poderia se juntar a mim, eu realizarei todos os seus desejos.\n";
-                cap01.pergunta1 = "aceitar";
-                cap01.pergunta2 = "recusar";
+                cap01.escolhas = new String[]{"aceitar","recusar"};
                 cap01.mostra(pj);
 
         if (cap01.escolha(scanner) == 1) {
@@ -83,8 +82,7 @@ public class App {
                 "\napós a morte da divindade os personagens começaram a sentir as estruturas do reino tremerem.\n"+
                 "os aventureiros percebem então que os outros deuses estão chegando."+
                 "[você pode digitar [fugir] para tentar fugir dos deuses ou digitar [lutar] para tentar matar mais um]";
-                cap03.pergunta1 = "Fugir";
-                cap03.pergunta2 = "lutar";
+                cap03.escolhas = new String[]{"fugir","lutar"};
                 cap03.mostra(pj);
                 if (cap03.escolha(scanner) == 1) {
                     System.out.println(pj.nome+ " e " + pj2.nome +" conseguiram escapar do reino e se salvarem ");
@@ -103,8 +101,7 @@ public class App {
                                     "como "+pj.nome+ " não pegou o poder a ganância de "+pj2.nome+" o fez roubar o poder para ele e matar "+pj.nome+" tirando 200 de energia dele."+
                                     "[você quer [voltar] para o primeiro capítulo ou [aceitar] o seu fim]";
 
-                 cap02.pergunta1 = "voltar";
-                 cap02.pergunta2 = "aceitar";
+                 cap02.escolhas = new String[]{"voltar","aceitar"};
                  cap02.mudancaDeEnergia = 200;
                  cap02.mostra(pj);                   
             
@@ -118,6 +115,5 @@ public class App {
        
             }
         }
-    }       
-}
-
+    } 
+}      
