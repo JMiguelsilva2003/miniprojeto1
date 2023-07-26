@@ -82,7 +82,7 @@ public class App {
                 pj.nome+" pegou o poder e ganhou poder.\n"+
                 "\napós a morte da divindade os personagens começaram a sentir as estruturas do reino tremerem.\n"+
                 "os aventureiros percebem então que os outros deuses estão chegando."+
-                "[você pode digitar [fugir] para tentar fugir dos deuses ou digitar [lutar] para tentar matar mais um]";
+                "[você pode digitar [fugir] para tentar fugir dos deuses ou digitar [lutar] para tentar matar mais um].";
                
         capitulo cap03_1 = new capitulo(pj, scanner);
         capitulo cap03_2 = new capitulo(pj, scanner);
