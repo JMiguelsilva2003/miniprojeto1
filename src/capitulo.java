@@ -2,11 +2,27 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class capitulo {
-    String narrativa;
-    ArrayList < Escolha > escolhas;
-    int mudancaDeEnergia = 0;
-    personagem pj;
-    Scanner scan;
+    private String narrativa;
+    public void setNarrativa(String narrativa) {
+        this.narrativa = narrativa;
+    }
+
+
+    private ArrayList < Escolha > escolhas;
+    public void addescolha(Escolha esk){
+        this.escolhas.add(esk);
+    } 
+   
+
+
+    private int mudancaDeEnergia = 0;
+    public void setMudancaDeEnergia(int mudancaDeEnergia) {
+        this.mudancaDeEnergia = mudancaDeEnergia;
+    }
+
+
+    private personagem pj;
+    private Scanner scan;
     
     public capitulo(personagem pj, Scanner scan) {
         this.escolhas = new ArrayList< Escolha >();
