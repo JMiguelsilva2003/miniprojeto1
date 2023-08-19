@@ -102,10 +102,6 @@ public class App {
         cap04.addescolha(new Escolha("aceitar", cap05));
         cap05.setNarrativa(" FIM DE JOGO");
         cap01.executar();
-
-        
-                
-       
             
         }
     } 

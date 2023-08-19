@@ -1,0 +1,45 @@
+CAPITULO
+- capitulo 1
+pj.getNome adentra a fundo no reino e encontra um guerreiro perdido e assustado pj.getNome: quem é você? pj2.getNome: eu sou pj2.getNome e eu posso ajudar você. pj.getNome: então vamos! pj.getNome ao adentra mais a fundo no reino e encontra um dos deuses, que o faz uma proposta.\nOutra divindade: você poderia se juntar a mim, eu realizarei todos os seus desejos.\n
+0
+Turame
+CAPITULO
+- capitulo 2
+Por aceitar essa proposta você foi morto e a maldição vai perpetuar por toda a eternidade.\n FIM de jogo!
+0
+Turame
+CAPITULO
+- capitulo 3
+\nOutra divindade: então você vai sofrer a furia dos deuses!\npor lutar com a divindade vc perdeu 80 de sua energia mas matou o deus
+80
+Turame
+CAPITULO
+- capitulo 4
+\nApós entrarem em um conflito épico pj.getNome saiu vitorioso e pode escolher roubou o poder do deus ou não. [você quer roubar? sim ou nao]
+0
+Turame
+CAPITULO
+- capitulo 5
+pj.getNome pegou o poder e ganhou poder.\n \napós a morte da divindade os personagens começaram a sentir as estruturas do reino tremerem.\n os aventureiros percebem então que os outros deuses estão chegando. [você pode digitar [fugir] para tentar fugir dos deuses ou digitar [lutar] para tentar matar mais um].
+0
+Turame
+CAPITULO
+- capitulo 6            
+pj.getNome  e   pj2.getNome  conseguiram escapar do reino e se salvarem \nFIM de jogo!
+0
+Turame
+CAPITULO
+- capitulo 7
+você não conseguiu derrotar os deuses e vc e seu amigo perderam 200 de energia
+200
+Turame 
+CAPITULO
+- capitulo 8
+ como pj.getNome  não pegou o poder a ganância de pj2.getNome o fez roubar o poder para ele e matar pj.getNome tirando 200 de energia dele. [você quer [voltar] para o primeiro capítulo ou [aceitar] o seu fim]
+200
+Turame
+CAPITULO
+- capitulo 9
+FIM DE JOGO
+0
+Turame
