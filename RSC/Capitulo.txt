@@ -43,3 +43,48 @@ CAPITULO
 FIM DE JOGO
 0
 Turame
+
+ESCOLHA
+- capitulo 1
+aceitar
+- capitulo 2
+
+ESCOLHA
+- capitulo 1
+recusar
+- capitulo 3
+
+ESCOLHA
+- capitulo 3
+continuar
+- capitulo 4
+
+ESCOLHA
+- capitulo 4
+sim
+- capitulo 5
+
+ESCOLHA
+- capitulo 4
+nao
+- capitulo 8
+
+ESCOLHA
+- capitulo 5
+fugir
+- capitulo 6
+
+ESCOLHA
+- capitulo 5
+lutar
+- capitulo 7
+
+ESCOLHA
+- capitulo 8
+voltar
+- capitulo 1
+
+ESCOLHA
+- capitulo 8
+aceitar
+- capitulo 9

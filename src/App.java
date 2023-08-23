@@ -1,4 +1,7 @@
 //import java.time.chrono.Era;
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class App {
@@ -48,61 +51,36 @@ public class App {
              System.out.println("divindade: Que bom que você não é criança, mas tenha cuidado com essas masmorras porque o perigo espreita cada esquina desse inferno!");
              System.out.println("divindade: Lhe desejo sorte jovem rapaz, você vai precisar de toda ela, que os deuses te acompanhe "+pj.getNome());
                
-        capitulo cap01 = new capitulo(pj,scanner);
-        cap01.setNarrativa(
-                pj.getNome()+" adentra a fundo no reino e encontra um guerreiro perdido e assustado"+
-                pj.getNome()+": quem é você?"+
-                pj2.getNome()+": eu sou "+pj2.getNome()+ " e eu posso ajudar você."+
-                pj.getNome()+": então vamos!"+
-                pj.getNome()+" ao adentra mais a fundo no reino e encontra um dos deuses, que o faz uma proposta."+
-                "\nOutra divindade: você poderia se juntar a mim, eu realizarei todos os seus desejos.\n");
-                
 
-        capitulo cap01_1 = new capitulo(pj, scanner);
-        cap01_1.setNarrativa("Por aceitar essa proposta você foi morto e a maldição vai perpetuar por toda a eternidade.\n FIM de jogo!");
-        capitulo cap01_2 = new capitulo(pj, scanner);
-        cap01_2.setNarrativa( 
-        "\nOutra divindade: então você vai sofrer a furia dos deuses!\npor lutar com a divindade vc perdeu 80 de sua energia mas matou o deus");
-        cap01_2.setMudancaDeEnergia(80);
-        
-        cap01.addescolha(new Escolha("aceitar", cap01_1));
-        cap01.addescolha(new Escolha("recusar", cap01_2));
+        File leitor = new File("RSC/Capitulo.txt");
+        Scanner leitando = new Scanner(leitor, "UTF-8"); 
+        String nomeCAPITULO;
+        String narraçaoCAPITULO;
+        String nomepersonagemCAPITULO;
+        int gastodenergiaCAPITULO;
+        Map <String,capitulo> listacapitulo = new HashMap <String,capitulo>() ;
+        while(leitando.hasNextLine()){
+            String linha = leitando.nextLine();
+            if (linha.equalsIgnoreCase("CAPITULO")) {
+                nomeCAPITULO = leitando.nextLine();
+                narraçaoCAPITULO = leitando.nextLine();
+                gastodenergiaCAPITULO = Integer.parseInt(leitando.nextLine());
+                nomepersonagemCAPITULO = leitando.nextLine();
+                listacapitulo.put(nomeCAPITULO, new capitulo(pj, scanner));
+                listacapitulo.get(nomeCAPITULO).setNarrativa(narraçaoCAPITULO);
+                listacapitulo.get(nomeCAPITULO).setMudancaDeEnergia(gastodenergiaCAPITULO);
+                listacapitulo.get(nomeCAPITULO).setNomeNPC(nomepersonagemCAPITULO);
 
-        capitulo cap02 = new capitulo(pj, scanner);
-        cap01_2.addescolha(new Escolha("continuar", cap02));
-        cap02.setNarrativa("\nApós entrarem em um conflito épico " +pj.getNome()+" saiu vitorioso e pode escolher roubou o poder do deus ou não. [você quer roubar? sim ou nao] ");
-
-        capitulo cap03 = new capitulo(pj, scanner);
-        capitulo cap04 = new capitulo(pj, scanner); 
-
-        cap02.addescolha(new Escolha("sim", cap03));
-        cap02.addescolha(new Escolha("nao", cap04));
-
-        cap03.setNarrativa( 
-                pj.getNome()+" pegou o poder e ganhou poder.\n"+
-                "\napós a morte da divindade os personagens começaram a sentir as estruturas do reino tremerem.\n"+
-                "os aventureiros percebem então que os outros deuses estão chegando."+
-                "[você pode digitar [fugir] para tentar fugir dos deuses ou digitar [lutar] para tentar matar mais um].");
-               
-        capitulo cap03_1 = new capitulo(pj, scanner);
-        capitulo cap03_2 = new capitulo(pj, scanner);
-        cap03.addescolha(new Escolha("fugir", cap03_1));
-        cap03.addescolha(new Escolha("lutar", cap03_2));
-
-        cap03_1.setNarrativa(pj.getNome()+ " e " + pj2.getNome() +" conseguiram escapar do reino e se salvarem \nFIM de jogo!");
-        cap03_2.setNarrativa("você não conseguiu derrotar os deuses e vc e seu amigo perderam 200 de energia ");
-        cap03_2.setMudancaDeEnergia(200);  
-                 
-        cap04.setNarrativa( 
-                                    "como "+pj.getNome()+ " não pegou o poder a ganância de "+pj2.getNome()+" o fez roubar o poder para ele e matar "+pj.getNome()+" tirando 200 de energia dele."+
-                                    "[você quer [voltar] para o primeiro capítulo ou [aceitar] o seu fim]");
-        
-        cap04.addescolha(new Escolha("voltar", cap01));
-        capitulo cap05 = new capitulo(pj, scanner);
-        cap04.addescolha(new Escolha("aceitar", cap05));
-        cap05.setNarrativa(" FIM DE JOGO");
-        cap01.executar();
-            
+            } else if (linha.equalsIgnoreCase("escolha")){
+                String origem = leitando.nextLine();
+                String txt = leitando.nextLine();
+                String destino = leitando.nextLine();
+                listacapitulo.get(origem).addescolha(new Escolha(txt, listacapitulo.get(destino)));
+            }
+        }
+        listacapitulo.get("- capitulo 1").executar();
+         
+    
         }
     } 
 }      

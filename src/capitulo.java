@@ -44,7 +44,7 @@ public class capitulo {
 
 
     private void mostra(){
-        System.out.println(narrativa);
+        System.out.println(narrativa.replace("\\n","\n").replace("pj.getNome", pj.getNome()).replace("pj2.getNome","Turame"));
         for ( Escolha escolha1 : escolhas) {
             System.out.println(escolha1.texto);
               
@@ -66,6 +66,12 @@ public class capitulo {
         
         }
         return -1;
+    }
+
+    private String nomeNPC;
+    
+    public void setNomeNPC(String nomeNPC) {
+        this.nomeNPC = nomeNPC;
     }
 
 
