@@ -76,7 +76,28 @@ public class App {
                 String txt = leitando.nextLine();
                 String destino = leitando.nextLine();
                 listacapitulo.get(origem).addescolha(new Escolha(txt, listacapitulo.get(destino)));
-            }
+            } else if (linha.equalsIgnoreCase("CAPITULOIMAGEM")) {
+                nomeCAPITULO = leitando.nextLine();
+                narraçaoCAPITULO = leitando.nextLine();
+                gastodenergiaCAPITULO = Integer.parseInt(leitando.nextLine());
+                nomepersonagemCAPITULO = leitando.nextLine();
+                String linhaString;
+                String imagem = "";
+                while(true){
+                    linhaString = leitando.nextLine();
+                    if (linhaString.equalsIgnoreCase("FIM")){
+                        break;
+                    }
+                    imagem = imagem + linhaString + "\n";
+                }
+                
+                Capitulo_Imagem temporario = new Capitulo_Imagem(pj, scanner);
+                listacapitulo.put(nomeCAPITULO, temporario);
+                temporario.setNarrativa(narraçaoCAPITULO);
+                temporario.setMudancaDeEnergia(gastodenergiaCAPITULO);
+                temporario.setNomeNPC(nomepersonagemCAPITULO);
+         
+                temporario.setImagem(imagem);}
         }
         listacapitulo.get("- capitulo 1").executar();
          

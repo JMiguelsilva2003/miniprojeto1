@@ -2,27 +2,27 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class capitulo {
-    private String narrativa;
+    protected String narrativa;
     public void setNarrativa(String narrativa) {
         this.narrativa = narrativa;
     }
 
 
-    private ArrayList < Escolha > escolhas;
+    protected ArrayList < Escolha > escolhas;
     public void addescolha(Escolha esk){
         this.escolhas.add(esk);
     } 
    
 
 
-    private int mudancaDeEnergia = 0;
+    protected int mudancaDeEnergia = 0;
     public void setMudancaDeEnergia(int mudancaDeEnergia) {
         this.mudancaDeEnergia = mudancaDeEnergia;
     }
 
 
-    private personagem pj;
-    private Scanner scan;
+    protected personagem pj;
+    protected Scanner scan;
     
     public capitulo(personagem pj, Scanner scan) {
         this.escolhas = new ArrayList< Escolha >();
@@ -31,7 +31,7 @@ public class capitulo {
     }
 
 
-    private boolean verificao(String escolha) {
+    protected boolean verificao(String escolha) {
         for ( Escolha escolha1 : escolhas) {
             if (escolha1.texto.equalsIgnoreCase(escolha)) {
                 return true; 
@@ -43,7 +43,7 @@ public class capitulo {
     }
 
 
-    private void mostra(){
+    protected void mostra(){
         System.out.println(narrativa.replace("\\n","\n").replace("pj.getNome", pj.getNome()).replace("pj2.getNome","Turame"));
         for ( Escolha escolha1 : escolhas) {
             System.out.println(escolha1.texto);
@@ -52,7 +52,7 @@ public class capitulo {
         if (mudancaDeEnergia != 0) pj.gastarenergia(mudancaDeEnergia);
     }
 
-    private int escolha(){
+    protected int escolha(){
         String lido = scan.nextLine();
         while (!verificao(lido)){
             System.out.println("Texto invalido, tente novamente");
@@ -68,7 +68,7 @@ public class capitulo {
         return -1;
     }
 
-    private String nomeNPC;
+    protected String nomeNPC;
     
     public void setNomeNPC(String nomeNPC) {
         this.nomeNPC = nomeNPC;

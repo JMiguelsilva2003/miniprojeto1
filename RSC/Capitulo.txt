@@ -1,8 +1,27 @@
-CAPITULO
+CAPITULOIMAGEM
 - capitulo 1
 pj.getNome adentra a fundo no reino e encontra um guerreiro perdido e assustado pj.getNome: quem é você? pj2.getNome: eu sou pj2.getNome e eu posso ajudar você. pj.getNome: então vamos! pj.getNome ao adentra mais a fundo no reino e encontra um dos deuses, que o faz uma proposta.\nOutra divindade: você poderia se juntar a mim, eu realizarei todos os seus desejos.\n
 0
 Turame
+                                  |&gt;&gt;&gt;                              
+                                  |                                 
+                    |&gt;&gt;&gt;      _  _|_  _|&gt;&gt;&gt;                
+                    |        |;| |;| |;|        |                   
+                _  _|_  _    \\.    .  /    _  _|_  _               
+               |;|_|;|_|;|    \\:. ,  /    |;|_|;|_|;|              
+               \\..      /    ||;   . |    \\.    .  /              
+                \\.  ,  /     ||:  .  |     \\:  .  /               
+                 ||:   |_   _ ||_ . _ | _   _||:   |                
+                 ||:  .|||_|;|_|;|_|;|_|;|_|;||:.  |                
+                 ||:   ||.    .     .      . ||:  .|                
+                 ||: . || .     . .   .  ,   ||:   |       \,/      
+                 ||:   ||:  ,  _______   .   ||: , |            /`\ 
+                 ||:   || .   /+++++++\    . ||:   |                
+                 ||:   ||.    |+++++++| .    ||: . |                
+              __ ||: . ||: ,  |+++++++|.  . _||_   |                
+     ____--`~    '--~~__|.    |+++++__|----~    ~`---,              
+-~--~                   ~---__|,--~'                  ~~----_____-~'
+FIM
 CAPITULO
 - capitulo 2
 Por aceitar essa proposta você foi morto e a maldição vai perpetuar por toda a eternidade.\n FIM de jogo!
