@@ -1,11 +1,11 @@
 CAPITULOIMAGEM
 - capitulo 1
-pj.getNome adentra a fundo no reino e encontra um guerreiro perdido e assustado pj.getNome: quem é você? pj2.getNome: eu sou pj2.getNome e eu posso ajudar você. pj.getNome: então vamos! pj.getNome ao adentra mais a fundo no reino e encontra um dos deuses, que o faz uma proposta.\nOutra divindade: você poderia se juntar a mim, eu realizarei todos os seus desejos.\n
+pj.getNome adentra a fundo no reino e encontra um guerreiro perdido e assustado. [pj.getNome]: quem é você? [pj2.getNome]: eu sou pj2.getNome e eu posso ajudar você. [pj.getNome]: então vamos!. pj.getNome ao adentra mais a fundo no reino e encontra um dos deuses, que o faz uma proposta.\n[Outra divindade]: você poderia se juntar a mim, eu realizarei todos os seus desejos.\n
 0
 Turame
                                   |&gt;&gt;&gt;                              
                                   |                                 
-                    |&gt;&gt;&gt;      _  _|_  _|&gt;&gt;&gt;                
+                    |&gt;&gt;&gt; |             |&gt;&gt;&gt;                
                     |        |;| |;| |;|        |                   
                 _  _|_  _    \\.    .  /    _  _|_  _               
                |;|_|;|_|;|    \\:. ,  /    |;|_|;|_|;|              
@@ -22,46 +22,319 @@ Turame
      ____--`~    '--~~__|.    |+++++__|----~    ~`---,              
 -~--~                   ~---__|,--~'                  ~~----_____-~'
 FIM
-CAPITULO
+CAPITULOIMAGEM
 - capitulo 2
 Por aceitar essa proposta você foi morto e a maldição vai perpetuar por toda a eternidade.\n FIM de jogo!
 0
 Turame
-CAPITULO
+                       _,.-------.,_
+                   ,;~'             '~;,
+                  ,;                     ;,
+                 ;                         ;
+                ,'                         ',
+               ,;                           ;,
+               ; ;      .           .      ; ;
+               | ;   ______       ______   ; |
+               |  `/~"     ~" . "~     "~\'  |
+               |  ~  ,-~~~^~, | ,~^~~~-,  ~  |
+                |   |        }:{        |   |
+                |   l       / | \       !   |
+                .~  (__,.--" .^. "--.,__)  ~.
+                |     ---;' / | \ `;---     |
+                 \__.       \/^\/       .__/
+                  V| \                 / |V
+                   | |T~\___!___!___/~T| |
+                   | |`IIII_I_I_I_IIII'| |
+                   |  \,III I I I III,/  |
+                    \   `~~~~~~~~~~'    /
+                      \   .       .   / 
+                        \.    ^    ./
+                          ^~~~^~~~^                             
+FIM
+CAPITULOIMAGEM
 - capitulo 3
-\nOutra divindade: então você vai sofrer a furia dos deuses!\npor lutar com a divindade vc perdeu 80 de sua energia mas matou o deus
-80
+\n[Outra divindade]: então você vai sofrer a furia dos deuses!\npor lutar com a divindade vc perdeu 50 de sua energia mas matou o deus.
+50
 Turame
+
+                          .      .
+                          |\____/|
+                         (\|----|/)
+                          \ 0  0 /
+                           |    |
+                        ___/\../\____
+                      /     --       \
+                    /  \         /   \
+                    |    \___/___/(   |
+                    \   /|  }{   | \  )
+                     \  ||__}{__|  |  |
+                      \  |;;;;;;;\  \ / \_______
+                       \ /;;;;;;;;| [,,[|======'
+                         |;;;;;;/ |     /
+                        ||;;|\   |
+                        ||;;/|   /
+                         \_|:||__|
+                         \ ;||  /
+                         |= || =|
+                         |= /\ =|
+                         /_/  \_\
+FIM
 CAPITULO
 - capitulo 4
-\nApós entrarem em um conflito épico pj.getNome saiu vitorioso e pode escolher roubou o poder do deus ou não. [você quer roubar? sim ou nao]
+\nApós entrarem em um conflito épico pj.getNome ficou surpreso com a vitória e pode escolher roubou o poder do deus ou não. [você quer roubar? sim ou nao]
 0
 Turame
 CAPITULO
 - capitulo 5
-pj.getNome pegou o poder e ganhou poder.\n \napós a morte da divindade os personagens começaram a sentir as estruturas do reino tremerem.\n os aventureiros percebem então que os outros deuses estão chegando. [você pode digitar [fugir] para tentar fugir dos deuses ou digitar [lutar] para tentar matar mais um].
+pj.getNome pegou o poder.\n \napós a morte da divindade os personagens começaram a sentir as estruturas do reino tremerem.\n os aventureiros percebem então que os outros deuses estavam chegando. [você pode digitar [fugir] para tentar fugir dos deuses ou digitar [lutar] para tentar lutar].
 0
 Turame
 CAPITULO
-- capitulo 6            
-pj.getNome  e   pj2.getNome  conseguiram escapar do reino e se salvarem \nFIM de jogo!
+- capitulo 6
+pj.getNome e pj2.getNome conseguiram escapar dos deuses e sairam do castelo \n pj.getNome percebeu que o deus que ele derrotou não estava morto pois ele estava entre os outros deuses \n [pj.getNome]: Turame caímos na armadilha dele, nos não o matamos \n [pj2.getNome]: Como eu não percebi, lutamos contra Fraus ele é a personificação da enganação e usa disso para trapacear.\n [pj2.getNome]: provavelmente esse poder que vc pegou é uma maldição de localização, precisamos encontrar alguem para livrar você, agora!\n digite [continuar].
 0
 Turame
 CAPITULO
 - capitulo 7
 você não conseguiu derrotar os deuses e vc e seu amigo perderam 200 de energia
 200
-Turame 
+Turame
 CAPITULO
 - capitulo 8
- como pj.getNome  não pegou o poder a ganância de pj2.getNome o fez roubar o poder para ele e matar pj.getNome tirando 200 de energia dele. [você quer [voltar] para o primeiro capítulo ou [aceitar] o seu fim]
+como pj.getNome não pegou o poder e a ganância de pj2.getNome o fez roubar o poder para ele e matar pj.getNome tirando 200 de energia dele. [você quer [voltar] para o primeiro capítulo ou [aceitar] o seu fim]
 200
 Turame
-CAPITULO
+CAPITULOIMAGEM
 - capitulo 9
 FIM DE JOGO
+200
+Turame
+                        _,.-------.,_
+                    ,;~'             '~;,
+                  ,;                     ;,
+                 ;                         ;
+                ,'                         ',
+               ,;                           ;,
+               ; ;      .           .      ; ;
+               | ;   ______       ______   ; |
+               |  `/~"     ~" . "~     "~\'  |
+               |  ~  ,-~~~^~, | ,~^~~~-,  ~  |
+                |   |        }:{        |   |
+                |   l       / | \       !   |
+                .~  (__,.--" .^. "--.,__)  ~.
+                |     ---;' / | \ `;---     |
+                 \__.       \/^\/       .__/
+                  V| \                 / |V
+                   | |T~\___!___!___/~T| |
+                   | |`IIII_I_I_I_IIII'| |
+                   |  \,III I I I III,/  |
+                    \   `~~~~~~~~~~'    /
+                      \   .       .   / 
+                        \.    ^    ./
+                          ^~~~^~~~^     
+
+FIM
+CAPITULOIMAGEM
+- capitulo 10
+Os guerreiros foram para uma antiga vila.\n [pj.getNome]: Eu conheço uma pessoa que pode me ajudar, venha comigo Turame.\n Digite [continuar]
 0
 Turame
+~         ~~          __          
+       _T      .,,.    ~--~ ^^  
+ ^^   // \                    ~ 
+      ][O]    ^^      ,-~ ~     
+   /''-I_I         _II____      
+__/_  /   \ ______/ ''   /'\_,__
+  | II--'''' \,--:--..,_/,.-{ },
+; '/__\,.--';|   |[] .-.| O{ _ }
+:' |  | []  -|   ''--:.;[,.'\,/ 
+'  |[]|,.--'' '',   ''-,.    |  
+  ..    ..-''    ;       ''. '  
+FIM
+
+CAPITULOIMAGEM
+- capitulo 11
+[pj.getNome]: Vamos entrar o sacerdote deve nos ajudar com a maldição. \n Digite [entrar]
+0
+Turame
+                                           
+                                    |       
+                                   ,|,      
+                                   |||      
+                                  / | \     
+                                  | | |     
+                                  | | |     
+                                 /  |  \    
+                                 |  |  |    
+                                 |  |   \   
+                                /    \  |   
+                                |    |  |   
+                                |    |   \  
+                               /     |   |  
+                               |     |   |  
+                              /      |    \ 
+                             /        \   ,\
+              ,d8888888888888|========|="" |
+            ,d"  "88888888888|  ,aa,  |  a |
+          ,d"      "888888888|  8  8  |  8 |
+       ,d8888888b,   "8888888|  8aa8  |  8,|
+     ,d"  "8888888b,   "88888|========|="" |
+   ,d"      "8888888b,   "888|  a  a  |  a |
+ ,d"   ,aa,   "8888888b,   "8|  8  8  |  8,|
+/|    d"  "b    |""""""|     |========|="" |
+ |    8    8    |      |     |  ,aa,  |  a |
+ |    8aaaa8    |      |     |  8  8  |  8 |
+ |              |      |     |  """"  | ,,=|
+ |aaaaaaaaaaaaaa|======"""""""""""""""""    
+FIM
+CAPITULOIMAGEM
+- capitulo 12
+[pj.getNome]: sacerdote eu preciso da sua ajuda, eu fui amaldiçoado. \n [Sacerdote]: Hum, você pode se libertar da maldição se você me trouxer o chifre do minotauro da masmorra. \n [Sacerdote]: Mas se você deseja voltar para o castelo e deseja tentar acabar com a  maldição do reino você pode procurar pela lâmina sagrada e o escudo sagrado \n as lendas falam que esses equipamentos foram de um antigo guerreiro que chegou a enfrentar e matar o deus da guerra Bishamonten e parte do poder desse deus foi armazenada em seus equipamentos. \n [pj.getNome]: Obrigado Pelas informações, agora eu e Turame iremos para as masmorra. \n Digite [continuar]
+0
+Turame
+                    ,-----.
+                   #,-. ,-.#
+                  () a   e ()
+                  (   (_)   )
+                  #\_  -  _/#
+                ,'   `"""`    `.
+              ,'      \X/      `.
+             /         X     ____\
+            /          v   ,`  v  `,
+           /    /         ( <==+==> )
+           `-._/|__________\   ^   /
+          (\\)  |______@____\  ^  /
+            \\  |     ( )    \ ^ /
+             )  |             \^/
+            (   |             |v
+           <(^)>|             |
+             v  |             |
+                |             |
+                |_.--.__ .--._|
+                  `==='  `==='
+FIM
+
+CAPITULOIMAGEM
+- capitulo 13
+[pj2.getNome]: Essa é a masmorra, parece que ninguém sobreviveu a ela mesmo. \n [pj.getNome]: Não ouço nada que parece vivo, vamos continuar. Digite [continuar]
+0
+Turame
+   _________________________________________________________
+ /|     -_-                                             _-  |\
+/ |_-_- _                                         -_- _-   -| \   
+  |                            _-  _--                      | 
+  |                            ,                            |
+  |      .-'````````'.        '(`        .-'```````'-.      |
+  |    .` |           `.      `)'      .` |           `.    |          
+  |   /   |   ()        \      U      /   |    ()       \   |
+  |  |    |    ;         | o   T   o |    |    ;         |  |
+  |  |    |     ;        |  .  |  .  |    |    ;         |  |
+  |  |    |     ;        |   . | .   |    |    ;         |  |
+  |  |    |     ;        |    .|.    |    |    ;         |  |
+  |  |    |____;_________|     |     |    |____;_________|  |  
+  |  |   /  __ ;   -     |     !     |   /     `'() _ -  |  |
+  |  |  / __  ()        -|        -  |  /  __--      -   |  |
+  |  | /        __-- _   |   _- _ -  | /        __--_    |  |
+  |__|/__________________|___________|/__________________|__|
+ /                                             _ -           \
+/   -_- _ -             _- _---                       -_-  -_ \
+FIM
+
+CAPITULOIMAGEM
+- capitulo 14
+[pj.getNome]: Esse cadáver ainda tem cheiro acho que estamos per... \n [pj2.getNome]: É ele!, eu posso ouvir o seu rugido. \n [enfrentar] ou fazer [silêncio].
+0
+Turame
+
+ ---.----.__..----.----| _|_||___||___||___||___||___||___||_|_ |
+    |        |    |    | -.-..---..---..---..---..---..---..-.- |--.-
+ ---'--.-----'----'--.-|  | ||   ||   ||   ||   ||   ||   || |  | `|
+       |:           (| |  | ||   ||   ||   ||   ||   ||   || |  |--'-
+       |:.           | | _|_||___||___||___||___||___||___||_|_ |
+ ------'----.-.,----.'-| -.-..---..---..---..---..---..---..-.- |-.--
+        ,/) |       |  |  | ||   ||   ||   ||   ||   ||   || |  | |`
+ ----.---8--'--.----'--|  | ||   ||   ||   ||   ||   ||   || |  | |
+     |   8     |:      | _|_||___||___||___||___||___||___||_|_ |-'--
+     | ,)//    |:.     | -.-..---..---..---..---..---..---..-.- |:.
+ ----'-`=;'--.-'-.----.|  | ||   ||   ||   ||   ||   ||   || |  |--.-
+       //   /_ _( \    |  | ||   ||   ||   ||   ||   ||   || |  | /|
+ ---.-//----)/\,'_/----| _|_||___||___||___||___||___||___||_|_ | `|
+    |/|     `;=.(      | -.-..---..---..---..---..---..---..-.- |--'-
+ (  |`.`.   |`,-/      |,-'-||---||---||---||---||---||---||-'-.|
+ -`-'-.`.`-.';'=`.-..--'-.--------.-------------.--.-------.----'--.-
+      |  `-./.}{-'\.)    |        )             |   `)     |       \
+      |    :`-}{-''||    |:.      |   ,_        |          |:.     |
+ ---'`'-.--|`-}{-'||)----'-.------'--'.,`--.----'--------.-'-------'-
+        |  :`-`'-'/)|      |               |:.           |
+ -.-----'--;`.}{,`.||----,-'--------.------'---.--------,'--.,-------
+  |:     ,'/.`..'_(/(    |:         |          |             \
+  |:.  ,',' |`--`.('))   |:.        |          |             |:
+ -'--,' <.._|__,. >`,----'----------'--------.,'-------------'----
+     ``----....(','
+            _,'>'
+            )/
+            `'
+FIM
+
+CAPITULOIMAGEM
+- capitulo 15
+Tentou enfrentar o minotauro e foi morto e Turame fugiu. \n FIM DE JOGO 
+0
+Turame
+                                                              _
+                                                              _( (~\
+       _ _                        /                          ( \> > \
+   -/~/ / ~\                     :;                \       _  > /(~\/
+  || | | /\ ;\                   |l      _____     |;     ( \/ /   /
+  _\\)\)\)/ ;;;                  `8o __-~     ~\   d|      \   \  //
+ ///(())(__/~;;\                  "88p;.  -. _\_;.oP        (_._/ /
+(((__   __ \\   \                  `>,% (\  (\./)8"         ;:'  i
+)))--`.'-- (( ;,8 \               ,;%%%:  ./V^^^V'          ;.   ;.
+((\   |   /)) .,88  `: ..,,;;;;,-::::::'_::\   ||\         ;[8:   ;
+ )|  ~-~  |(|(888; ..``'::::8888oooooo.  :\`^^^/,,~--._    |88::| |
+  \ -===- /|  \8;; ``:.      oo.8888888888:`((( o.ooo8888Oo;:;:'  |
+ |_~-___-~_|   `-\.   `        `o`88888888b` )) 888b88888P""'     ;
+  ;~~~~;~~         "`--_`.       b`888888888;(.,"888b888"  ..::;-'
+   ;      ;              ~"-....  b`8888888:::::.`8888. .:;;;''
+      ;    ;                 `:::. `:::OOO:::::::.`OO' ;;;''
+ :       ;                     `.      "``::::::''    .'
+    ;                           `.   \_              /
+  ;       ;                       +:   ~~--  `:'  -';
+                                   `:         : .::/
+      ;                            ;;+_  :::. :..;;;
+FIM
+
+CAPITULOIMAGEM
+- capitulo 16
+
+0
+Turame
+       -""\
+    .-"  .`)     (
+   j   .'_+     :[                )      .^--..
+  i    -"       |l                ].    /      i
+ ," .:j         `8o  _,,+.,.--,   d|   `:::;    b
+ i  :'|          "88p;.  (-."_"-.oP        \.   :
+ ; .  (            >,%%%   f),):8"          \:'  i
+i  :: j          ,;%%%:; ; ; i:%%%.,        i.   `.
+i  `: ( ____  ,-::::::' ::j  [:```          [8:   )
+<  ..``'::::8888oooooo.  :(jj(,;,,,         [8::  <
+`. ``:.      oo.8888888888:;%%%8o.::.+888+o.:`:'  |
+ `.   `        `o`88888888b`%%%%%88< Y888P""'-    ;
+   "`---`.       Y`888888888;;.,"888b."""..::::'-'
+          "-....  b`8888888:::::.`8888._::-"
+             `:::. `:::::O:::::::.`%%'|
+              `.      "``::::::''    .'
+                `.                   <
+                  +:         `:   -';
+                   `:         : .::/
+                    ;+_  :::. :..;;;       
+                    ;;;;,;;;;;;;;,;;
+FIM
+
+
+
+
 
 ESCOLHA
 - capitulo 1
@@ -107,3 +380,38 @@ ESCOLHA
 - capitulo 8
 aceitar
 - capitulo 9
+
+ESCOLHA
+- capitulo 6
+continuar
+- capitulo 10
+
+ESCOLHA
+- capitulo 10
+continuar
+- capitulo 11
+
+ESCOLHA
+- capitulo 11
+entrar
+- capitulo 12
+
+ESCOLHA
+- capitulo 12
+continuar
+- capitulo 13
+
+ESCOLHA
+- capitulo 13
+continuar
+- capitulo 14
+
+ESCOLHA
+- capitulo 14
+enfrentar
+- capitulo 15
+
+ESCOLHA
+- capitulo 14
+silêncio
+- capitulo 16
